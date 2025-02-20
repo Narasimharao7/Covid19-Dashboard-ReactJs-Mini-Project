@@ -1,0 +1,273 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #1e1e30;
+  margin: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo-name {
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  color: #f8fafc;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.highlight-logo {
+  font-weight: 500;
+  color: #3b82f6 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-name {
+    font-size: 20px;
+  }
+}
+
+.desktop-nav-links-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav-links-container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+}
+
+.nav-link-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.355556px;
+
+  /* Light / blue-gray / 400 */
+
+  color: #94a3b8;
+  animation: 0.3s ease;
+}
+
+.nav-link-item:hover {
+  color: #ffffff;
+}
+
+.desktop-nav-link {
+  margin-left: 48px;
+}
+
+.mobile-nav-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-button {
+    display: none;
+  }
+}
+
+.mobile-menu-image {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #161625;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-list {
+    display: none;
+  }
+}
+
+.mobile-nav-link {
+  margin-right: 24px;
+}
+
+.mobile-close-btn-container {
+  margin-left: auto;
+}
+
+.close-icon-container {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobile-close-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.highlight-nav-link {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+/* .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e30;
+  height: 70px;
+  padding: 10px 30px;
+  margin: 0px;
+  width: 100%;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 786px) {
+  .nav-container {
+    padding: 10px 80px;
+    height: 80px;
+  }
+}
+
+.header-heading {
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-heading {
+    font-size: 24px;
+  }
+}
+
+.india-text {
+  color: #007bff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.nav-menu-item {
+  width: 100%;
+  padding: 12px 15px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-item {
+    font-size: 14px;
+  }
+}
+
+.nav-menu-item:hover {
+  color: #f4f6f3;
+}
+
+.active-menu {
+  color: #f4f6f3;
+  font-weight: 600;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.mobile-nav-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #1e1e30;
+  color: #f8fafc;
+  border: 2px solid #94a3b8;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  height: 70px;
+}
+
+.menu-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-menu-icon-button {
+  background: #1e1e30;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-icon-button {
+    display: none;
+  }
+}
+
+.close-icon-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
+.menu-icon {
+  height: 25px;
+  width: 30px;
+  color: #ffffff;
+} */
